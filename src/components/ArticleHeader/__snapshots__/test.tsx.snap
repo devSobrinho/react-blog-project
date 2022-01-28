@@ -1,15 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ArticleHeader /> should match snapshot 1`] = `
-.c3 {
+.c2 {
   color: #000000;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-
-.c5 {
-  color: #000000;
-  font-size: 6.4rem;
+  line-height: 1.2;
+  font-size: 4.0rem;
   text-transform: none;
 }
 
@@ -20,42 +15,42 @@ exports[`<ArticleHeader /> should match snapshot 1`] = `
   border-bottom: 0.1rem solid #DDDDDD;
 }
 
-.c0 .c2 {
+.c0 .c1 {
   margin: 0;
   margin-bottom: 2.4rem;
   font-size: 5.6rem;
 }
 
-.c6 {
+.c3 {
   font-size: 2.4rem;
   margin: 2.4rem 0;
 }
 
-.c7 {
+.c4 {
   max-width: 100%;
   display: block;
   margin-bottom: 2.4rem;
 }
 
-.c8 {
+.c5 {
   font-size: 1.6rem;
   color: #AAAAAA;
   font-style: italic;
 }
 
-.c8 .categories span::after {
+.c5 .categories span::after {
   content: ', ';
 }
 
-.c8 .categories span:last-child::after {
+.c5 .categories span:last-child::after {
   content: '';
 }
 
-.c8 p {
+.c5 p {
   font-size: 1.6rem;
 }
 
-.c8 a {
+.c5 a {
   color: #dc143c;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -63,73 +58,19 @@ exports[`<ArticleHeader /> should match snapshot 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c8 a:hover {
+.c5 a:hover {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c4 > img {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  max-width: 96rem;
-  color: #333333;
-  font-size: 1.6rem;
-  padding-bottom: 6.4rem;
-  margin: 0 auto;
-}
-
-.c1 .c2 {
-  margin: 0 0 calc(1.6rem - 1rem);
-}
-
 @media (max-width:768px) {
-  .c5 {
+  .c0 .c1 {
     font-size: 4.0rem;
   }
 }
 
 @media (max-width:768px) {
-  .c0 .c2 {
-    font-size: 4.0rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c8 p {
+  .c5 p {
     font-size: 1.6rem;
   }
 }
@@ -137,41 +78,23 @@ exports[`<ArticleHeader /> should match snapshot 1`] = `
 <header
   class="c0"
 >
-  <header
-    class="c1"
-  >
-    <h1
-      class="c2 c3"
-    >
-      <a
-        class="c4"
-        href="/"
-        target="_self"
-      >
-        <img
-          alt="Daniel Sobrinho - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-          src="assets/images/dev-sobrinho.jpeg"
-        />
-      </a>
-    </h1>
-  </header>
   <h1
-    class="c2 c5"
+    class="c1 c2"
   >
     Ipsum movet liberavisse an mea, diceret vituperata
   </h1>
   <p
-    class="c6"
+    class="c3"
   >
     Abhorreant reformidans eum an, per equidem repudiandae no, ex cum elitr argumentum persequeris.
   </p>
   <img
     alt="Ipsum movet liberavisse an mea, diceret vituperata"
-    class="c7"
+    class="c4"
     src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg"
   />
   <div
-    class="c8"
+    class="c5"
   >
     <p>
       <span />

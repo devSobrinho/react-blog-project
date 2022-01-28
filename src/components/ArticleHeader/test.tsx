@@ -18,9 +18,7 @@ describe('<ArticleHeader />', () => {
       'src',
       props.cover,
     );
-    expect(
-      screen.getByText(formatDate(props.articleMeta.createdAt)),
-    ).toBeInTheDocument();
+    expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
   });
 
   it('should match snapshot', () => {

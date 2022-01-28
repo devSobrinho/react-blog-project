@@ -8,11 +8,12 @@ describe('<Footer />', () => {
     expect(screen.getByRole('heading', { name: 'Olá' })).toBeInTheDocument();
     expect(container).toMatchInlineSnapshot(`
       .c2 {
-        font-size: 2.4rem;
+        font-size: calc(1.6rem + 0.2rem);
+        line-height: 1.5;
       }
 
       .c2 p {
-        margin: 4.0rem 0;
+        margin: 2.4rem 0;
       }
 
       .c2 a,
@@ -30,16 +31,29 @@ describe('<Footer />', () => {
         filter: brightness(50%);
       }
 
+      .c2 code {
+        font-family: monospace;
+        color: #dc143c;
+        font-size: 1.6rem;
+        background: #DDDDDD;
+        padding: 0.2rem;
+        margin: 0.2rem;
+      }
+
       .c2 pre {
         background: #000000;
         padding: 2.4rem;
         font-family: monospace;
         color: #FFFFFF;
-        margin: 4.0rem 0;
-        border-radius: 5px;
+        margin: 2.4rem 0;
         width: 100%;
         overflow-x: auto;
         font-size: 1.6rem;
+      }
+
+      .c2 pre code {
+        color: inherit;
+        background: inherit;
       }
 
       .c2 img {
@@ -48,22 +62,21 @@ describe('<Footer />', () => {
 
       .c2 .image {
         background: #DDDDDD;
-        border-radius: 5px;
         line-height: 0;
-        margin: 4.0rem 0;
+        margin: 2.4rem 0;
       }
 
       .c2 .image figcaption {
         font-size: 1.6rem;
-        padding: 0.8rem;
+        padding: 1.6rem;
         text-align: center;
         line-height: 1.3;
       }
 
       .c2 .image-style-side {
-        float: right;
         max-width: 50%;
-        margin: 2.4rem;
+        float: right;
+        margin: 2.4rem 0;
       }
 
       .c2 hr {
@@ -73,7 +86,7 @@ describe('<Footer />', () => {
 
       .c2 ul,
       .c2 ol {
-        margin: 4.0rem 0;
+        margin: 2.4rem 4.0rem;
       }
 
       .c2 .table {
@@ -85,12 +98,23 @@ describe('<Footer />', () => {
       .c2 table {
         width: 100%;
         border-collapse: collapse;
+        margin: 2.4rem 0;
       }
 
-      .c2 table th,
-      .c2 table td {
+      .c2 table td,
+      .c2 table th {
         padding: 1.6rem;
         border: 0.1rem solid #DDDDDD;
+      }
+
+      .c2 blockquote {
+        border-left: 0.5rem solid #dc143c;
+        color: #AAAAAA;
+        -webkit-filter: brightness(80%);
+        filter: brightness(80%);
+        padding-left: 2.4rem;
+        font-style: italic;
+        margin: 2.4rem;
       }
 
       .c0 {
@@ -114,8 +138,9 @@ describe('<Footer />', () => {
         }
 
         .c2 .image-style-side {
-          float: none;
           max-width: 100%;
+          float: none;
+          margin: 0;
         }
       }
 
