@@ -41,4 +41,8 @@ export const Content = styled.div`
   align-items: center;
 `;
 
-export const Excerpt = styled.p``;
+export const Excerpt = styled.p`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.medium};
+  `}
+`;

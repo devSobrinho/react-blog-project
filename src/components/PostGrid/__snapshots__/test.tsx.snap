@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostGrid /> should match snapshot 1`] = `
+.c7 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c2 .c6 {
+  margin-top: calc(1.6rem - 0.6rem);
+  margin-bottom: calc(1.6rem - 0.6rem);
+}
+
+.c2 .c6:hover {
+  color: #000000;
+}
+
+.c2 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c2:hover .c3 {
+  opacity: 0.8;
+}
+
+.c2:hover a {
+  color: #dc143c;
+}
+
+.c4 {
+  max-width: 100%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  font-size: 2.4rem;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(28rem,1fr));
+  gap: 3.2rem;
+  padding: 3.2rem;
+}
+
+@media (max-width:425px) {
+  .c1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/teste"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/teste"
+            >
+              All the Lorem Ipsum generators on the Internet tend to repeat
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+          </p>
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          aria-label="post-photo"
+          href="/post/how-to-use-object-destructuring-in-java-script"
+        >
+          <img
+            alt=""
+            class="c3 c4"
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643232632/cover_e70136009c.webp"
+          />
+        </a>
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6 c7"
+          >
+            <a
+              href="/post/how-to-use-object-destructuring-in-java-script"
+            >
+              How to Use Object Destructuring in JavaScript
+            </a>
+          </h2>
+          <p
+            class="c8"
+          >
+            how to use Object Destructuring in JavaScript
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
