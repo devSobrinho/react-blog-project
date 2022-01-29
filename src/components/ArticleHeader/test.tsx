@@ -7,7 +7,7 @@ import { formatDate } from '../../utils/format-data';
 const props: ArticleHeaderProps = mock;
 
 describe('<ArticleHeader />', () => {
-  it('should render heading, excerpt, cover img and meta', () => {
+  it('should render heading, excerpt, cover img and mueta', () => {
     renderTheme(<ArticleHeader {...props} />);
 
     expect(
@@ -16,7 +16,7 @@ describe('<ArticleHeader />', () => {
     expect(screen.getByText(props.excerpt)).toBeInTheDocument();
     expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
       'src',
-      props.cover,
+      props.cover.url,
     );
     expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
   });

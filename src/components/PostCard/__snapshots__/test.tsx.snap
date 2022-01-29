@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostCard /> should match snapshot 1`] = `
+.c5 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c0 .c4 {
+  margin-top: calc(1.6rem - 0.6rem);
+  margin-bottom: calc(1.6rem - 0.6rem);
+}
+
+.c0 .c4:hover {
+  color: #000000;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c0:hover .c1 {
+  opacity: 0.8;
+}
+
+.c0:hover a {
+  color: #dc143c;
+}
+
+.c2 {
+  max-width: 100%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+>
+  <a
+    aria-label="post-photo"
+    href="/post/teste"
+  >
+    <img
+      alt=""
+      class="c1 c2"
+      src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643225348/0bbc3d47bac364c50b42c4b810fe602c7ef6f2bf_1_197a38aca9.jpg"
+    />
+  </a>
+  <div
+    class="c3"
+  >
+    <h2
+      class="c4 c5"
+    >
+      <a
+        href="/post/teste"
+      >
+        All the Lorem Ipsum generators on the Internet tend to repeat
+      </a>
+    </h2>
+    <p
+      class=""
+    >
+      ard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, a
+    </p>
+  </div>
+</div>
+`;

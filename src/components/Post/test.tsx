@@ -15,7 +15,7 @@ describe('<Post />', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
       'src',
-      props.cover,
+      props.cover.url,
     );
     expect(screen.getByText(props.excerpt)).toHaveStyleRule(
       'font-size',

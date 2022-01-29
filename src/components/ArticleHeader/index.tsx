@@ -1,12 +1,13 @@
 import * as Styled from './styles';
 import { Heading } from '../Heading';
 import { ArticleMeta, ArticleMetaProps } from '../ArticleMeta';
+import { StrapiImage } from '../../shared-typed/strapi-image';
 
 export type ArticleHeaderProps = {
   id: string;
   title: string;
   excerpt: string;
-  cover: string;
+  cover: StrapiImage;
 } & ArticleMetaProps;
 
 export const ArticleHeader = ({
@@ -21,7 +22,7 @@ export const ArticleHeader = ({
     <Styled.Wrapper>
       <Heading size="big">{title}</Heading>
       <Styled.Excerpt>{excerpt}</Styled.Excerpt>
-      <Styled.Cover src={cover} alt={title} />
+      <Styled.Cover src={cover.url} alt={title} />
       <ArticleMeta
         categories={categories}
         author={author}
