@@ -8,6 +8,7 @@ module.exports = {
     '!<rootDir>/src/config/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/pages/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/shared-typed/*',
     '!<rootDir>/node_modules/',
   ],
 

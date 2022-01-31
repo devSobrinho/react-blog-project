@@ -146,6 +146,7 @@ exports[`<BaseTemplate /> should match snapshot 1`] = `
 
 .c4 {
   margin-top: 6.4rem;
+  padding: 0 3.2rem;
 }
 
 .c12 {
@@ -308,6 +309,32 @@ exports[`<BaseTemplate /> should match snapshot 1`] = `
   bottom: 2rem;
   right: 2rem;
   z-index: 6;
+}
+
+@media (max-width:425px) {
+  .c10 {
+    margin-left: 0;
+  }
+
+  .c10 > h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width:425px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .c5 > .c6 {
+    margin: 0 0 2.4rem 0;
+  }
 }
 
 @media (max-width:425px) {

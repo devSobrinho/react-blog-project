@@ -7,6 +7,14 @@ export const Content = styled.div`
     display: flex;
     flex-flow: column wrap;
     margin-left: ${theme.spacings.large};
+
+    @media ${theme.media.lteSmall} {
+      margin-left: 0;
+
+      & > h2 {
+        text-align: center;
+      }
+
   `}
 `;
 export const Wrapper = styled.header`
@@ -24,6 +32,14 @@ export const Wrapper = styled.header`
 
     & ${HeaddingStyles} {
       margin: 0 0 calc(${theme.spacings.small} - 1rem);
+    }
+
+    @media ${theme.media.lteSmall} {
+      display: flex;
+      flex-flow: column wrap;
+      & > ${HeaddingStyles} {
+        margin: 0 0 ${theme.spacings.medium} 0;
+      }
     }
   `}
 `;

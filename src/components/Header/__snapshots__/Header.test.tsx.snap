@@ -75,6 +75,32 @@ exports[`<Header /> should match snapshot 1`] = `
   margin: 0 0 calc(1.6rem - 1rem);
 }
 
+@media (max-width:425px) {
+  .c4 {
+    margin-left: 0;
+  }
+
+  .c4 > h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width:425px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .c0 > .c1 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
 <header
   class="c0"
 >
