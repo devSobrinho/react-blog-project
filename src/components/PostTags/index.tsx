@@ -7,20 +7,22 @@ export type PostTagsProps = {
 };
 
 export const PostTags = ({ tags = [] }: PostTagsProps) => {
+  if (tags.length === 0) {
+    return null;
+  }
+
   return (
     <Styled.Wrapper>
-      {/* {!tags.length && <p>sem tag</p>} */}
-      {tags.length > 0 && 'tags:'}
-      {tags.length > 0 &&
-        tags.map((tag) => {
-          return (
-            <span key={`tag-${tag.id}`}>
-              <Link href={`/tag/${tag.slug}`} passHref>
-                <a>{tag.displayName}</a>
-              </Link>
-            </span>
-          );
-        })}
+      tags:
+      {tags.map((tag) => {
+        return (
+          <span key={`tag-${tag.id}`}>
+            <Link href={`/tag/${tag.slug}`} passHref>
+              <a>{tag.displayName}</a>
+            </Link>
+          </span>
+        );
+      })}
     </Styled.Wrapper>
   );
 };

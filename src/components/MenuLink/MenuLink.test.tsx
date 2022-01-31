@@ -4,7 +4,7 @@ import { MenuLink } from '.';
 
 describe('<MenuLink />', () => {
   it('should render a link', () => {
-    renderTheme(<MenuLink link="http://localhost">Children</MenuLink>);
+    renderTheme(<MenuLink link="http://localhost" text="Children" id="aa" />);
     expect(screen.getByRole('link', { name: 'Children' })).toHaveAttribute(
       'target',
       '_self',
@@ -13,9 +13,12 @@ describe('<MenuLink />', () => {
 
   it('should render open in a new tab', () => {
     renderTheme(
-      <MenuLink link="http://localhost" newTab={true}>
-        Children
-      </MenuLink>,
+      <MenuLink
+        link="http://localhost"
+        newTab={true}
+        text="Children"
+        id="aa"
+      />,
     );
     expect(screen.getByRole('link', { name: 'Children' })).toHaveAttribute(
       'target',
@@ -24,7 +27,7 @@ describe('<MenuLink />', () => {
   });
 
   it('should render internal link', () => {
-    renderTheme(<MenuLink link="/link">Children</MenuLink>);
+    renderTheme(<MenuLink link="/link" text="Children" id="aa" />);
     expect(screen.getByRole('link', { name: 'Children' })).toHaveAttribute(
       'target',
       '_self',
@@ -33,10 +36,14 @@ describe('<MenuLink />', () => {
 
   it('should render open in a new tab', () => {
     const { container } = renderTheme(
-      <MenuLink link="http://localhost" newTab={false}>
-        Children
-      </MenuLink>,
+      <MenuLink
+        link="http://localhost"
+        newTab={false}
+        text="Children"
+        id="aa"
+      />,
     );
+
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         display: block;

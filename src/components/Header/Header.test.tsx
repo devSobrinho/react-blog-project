@@ -19,7 +19,7 @@ describe('<Header />', () => {
       screen.getByRole('img', {
         name: `${props.blogName} - ${props.blogDescription}`,
       }),
-    ).toHaveAttribute('src', props.logo);
+    ).toHaveAttribute('src', props.logo.url);
   });
 
   it('should render image only', () => {

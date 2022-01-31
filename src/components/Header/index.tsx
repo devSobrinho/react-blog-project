@@ -3,7 +3,11 @@ import { LogoLink } from '../LogoLink';
 import * as Styled from './styles';
 
 export type HeaderProps = {
-  logo: string;
+  logo: {
+    url: string;
+    id: string;
+    alternativeText?: string;
+  };
   blogName: string;
   blogDescription: string;
   showText?: boolean;
@@ -18,9 +22,13 @@ export function Header({
   return (
     <Styled.Wrapper>
       <LogoLink
-        link={'/'}
-        text={`${blogName} - ${blogDescription}`}
-        srcImg={logo}
+        link={logo.url}
+        text={
+          logo.alternativeText === ''
+            ? logo.alternativeText
+            : `${blogName} - ${blogDescription}`
+        }
+        srcImg={logo.url}
         newTab={false}
       />
       {showText && (

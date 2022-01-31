@@ -1,4 +1,4 @@
-import { LogoLink, LogoLinkProps } from '../LogoLink';
+import { LogoLink } from '../LogoLink';
 import { MenuLink, MenuLinkProps } from '../MenuLink';
 import * as Styled from './styles';
 import {
@@ -8,11 +8,22 @@ import {
 import { useState } from 'react';
 
 export type MenuProps = {
-  logoLink: LogoLinkProps;
+  // logoLink: LogoLinkProps;
+  text: string;
+  srcImg?: string;
+  link: string;
+  newTab?: boolean;
+
   links: MenuLinkProps[];
 };
 
-export const Menu = ({ logoLink, links }: MenuProps) => {
+export const Menu = ({
+  links,
+  text,
+  srcImg = '',
+  link,
+  newTab = false,
+}: MenuProps) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   return (
@@ -35,7 +46,9 @@ export const Menu = ({ logoLink, links }: MenuProps) => {
         menuVisible={menuVisible}
         aria-label="menu"
       >
-        {menuVisible && <LogoLink {...logoLink} />}
+        {menuVisible && (
+          <LogoLink text={text} srcImg={srcImg} link={link} newTab={newTab} />
+        )}
         {menuVisible && (
           <ul className="menu-navbar">
             {links?.map((link) => {

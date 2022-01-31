@@ -35,9 +35,10 @@ describe('<Menu />', () => {
     expect(screen.getByRole('navigation', { name: 'menu' })).toHaveStyle({
       padding: '2.4rem',
     });
-    expect(
-      screen.getByRole('img', { name: props.logoLink.text }),
-    ).toHaveAttribute('src', props.logoLink.srcImg);
+    expect(screen.getByRole('img', { name: props.text })).toHaveAttribute(
+      'src',
+      props.srcImg,
+    );
     expect(
       screen.getByRole('navigation', { name: 'menu' }).firstChild,
     ).toBeInTheDocument();

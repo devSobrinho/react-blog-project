@@ -83,7 +83,7 @@ exports[`<Header /> should match snapshot 1`] = `
   >
     <a
       class="c3"
-      href="/"
+      href="assets/images/dev-sobrinho.jpeg"
       target="_self"
     >
       <img

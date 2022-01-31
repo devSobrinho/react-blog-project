@@ -3,25 +3,20 @@ import Link from 'next/link';
 
 export type MenuLinkProps = {
   id: string;
-  children: React.ReactNode;
+  text: string;
   link: string;
   newTab?: boolean;
 };
 
-export const MenuLink = ({
-  children,
-  link,
-  newTab = false,
-  id,
-}: MenuLinkProps) => {
+export const MenuLink = ({ text, link, newTab = false, id }: MenuLinkProps) => {
   const target = newTab ? '_blank' : '_self';
   const nextLink = link.match(/^\//) ? true : false;
 
   if (nextLink) {
     return (
       <Link href={link} passHref>
-        <Styled.Container key={id} target={target}>
-          {children}
+        <Styled.Container key={id} target={target} aria-label={text}>
+          {text}
         </Styled.Container>
       </Link>
     );
@@ -29,7 +24,7 @@ export const MenuLink = ({
 
   return (
     <Styled.Container key={id} href={link} target={target}>
-      {children}
+      {text}
     </Styled.Container>
   );
 };

@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseTemplate /> should match snapshot 1`] = `
+.c7 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c11 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c9 > img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.c10 {
+  max-width: 48rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 96rem;
+  color: #333333;
+  font-size: 1.6rem;
+  padding-bottom: 6.4rem;
+  margin: 0 auto;
+}
+
+.c5 .c6 {
+  margin: 0 0 calc(1.6rem - 1rem);
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.c1 {
+  position: fixed;
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  margin-left: 1.6rem;
+  margin-top: 1.6rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c1:hover {
+  color: #dc143c;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  height: 100vh;
+  background: #000000;
+  padding: 0.5rem;
+  overflow-y: auto;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.c3 .c6 {
+  width: auto;
+  margin-top: 5rem;
+}
+
+.c3 .c8 img {
+  border: 0.5rem solid #dc143c;
+  border-radius: 50%;
+}
+
+.c3 .menu-navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c4 {
+  margin-top: 6.4rem;
+}
+
+.c12 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+.c13 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c16 {
+  font-size: calc(1.6rem + 0.2rem);
+  line-height: 1.5;
+}
+
+.c16 p {
+  margin: 2.4rem 0;
+}
+
+.c16 a,
+.c16 a:visited,
+.c16 a:link {
+  color: #dc143c;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c16 a:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.c16 code {
+  font-family: monospace;
+  color: #dc143c;
+  font-size: 1.6rem;
+  background: #DDDDDD;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.c16 pre {
+  background: #000000;
+  padding: 2.4rem;
+  font-family: monospace;
+  color: #FFFFFF;
+  margin: 2.4rem 0;
+  width: 100%;
+  overflow-x: auto;
+  font-size: 1.6rem;
+}
+
+.c16 pre code {
+  color: inherit;
+  background: inherit;
+}
+
+.c16 img {
+  max-width: 100%;
+}
+
+.c16 .image {
+  background: #DDDDDD;
+  line-height: 0;
+  margin: 2.4rem 0;
+}
+
+.c16 .image figcaption {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.c16 .image-style-side {
+  max-width: 50%;
+  float: right;
+  margin: 2.4rem 0;
+}
+
+.c16 hr {
+  border: none;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c16 ul,
+.c16 ol {
+  margin: 2.4rem 4.0rem;
+}
+
+.c16 .table {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.c16 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.4rem 0;
+}
+
+.c16 table td,
+.c16 table th {
+  padding: 1.6rem;
+  border: 0.1rem solid #DDDDDD;
+}
+
+.c16 blockquote {
+  border-left: 0.5rem solid #dc143c;
+  color: #AAAAAA;
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  padding-left: 2.4rem;
+  font-style: italic;
+  margin: 2.4rem;
+}
+
+.c14 {
+  text-align: center;
+  border-top: 0.1rem solid #DDDDDD;
+}
+
+.c14 a {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c14 .c15 {
+  font-size: 1.6rem;
+}
+
+.c17 {
+  position: fixed;
+  background: #000000;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6;
+}
+
+@media (max-width:425px) {
+
+}
+
+@media (max-width:425px) {
+  .c3 {
+    width: 0px;
+    padding: 0rem;
+  }
+
+  .c3 .menu-navbar {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .c16 {
+    font-size: 2rem;
+  }
+
+  .c16 .image-style-side {
+    max-width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+
+<div
+  class=""
+>
+  <menu
+    class="c0"
+  >
+    <a
+      aria-label="Open or close menu"
+      class="c1 menu-icon"
+      href="#"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="c2"
+        fill="currentColor"
+        focusable="false"
+        height="2.5rem"
+        viewBox="0 0 24 24"
+        width="2.5rem"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </a>
+    <nav
+      aria-label="menu"
+      class="c3 menu"
+    />
+  </menu>
+  <div
+    class="c4"
+  >
+    <header
+      class="c5"
+    >
+      <h1
+        class="c6 c7"
+      >
+        <a
+          class="c8 c9"
+          href="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643222932/favicon_97160edba1.png"
+          target="_self"
+        >
+          <img
+            alt=""
+            src="https://res.cloudinary.com/dhgenbrm2/image/upload/v1643222932/favicon_97160edba1.png"
+          />
+        </a>
+      </h1>
+      <div
+        class="c10"
+      >
+        <h2
+          class="c6 c11"
+        >
+          Dev Sobrinho
+        </h2>
+        <p>
+          Portfolio, tecnologias, notícias, artigos e inovações tecnologicas.
+        </p>
+      </div>
+    </header>
+  </div>
+  <div
+    class="c12"
+  >
+    ola br
+  </div>
+  <div
+    class="c13"
+  >
+    <footer
+      class="c14"
+      style="margin-top: 50px;"
+    >
+      <div
+        class="c15 c16"
+      >
+        <p>
+          O texto da Footer
+        </p>
+      </div>
+    </footer>
+  </div>
+  <a
+    aria-label="Go to top"
+    class="c17"
+    href="#"
+    title="Go to top"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+      />
+    </svg>
+  </a>
+</div>
+`;

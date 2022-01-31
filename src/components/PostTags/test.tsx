@@ -23,4 +23,9 @@ describe('<PostTags />', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+  it('should match snapshot with not tag', () => {
+    const { container } = renderTheme(<PostTags {...props} tags={undefined} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

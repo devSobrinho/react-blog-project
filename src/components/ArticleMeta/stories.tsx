@@ -22,3 +22,27 @@ export const Template: Story<ArticleMetaProps> = (args) => {
     </div>
   );
 };
+
+export const NoAuthor: Story<ArticleMetaProps> = (args) => {
+  return (
+    <div>
+      <ArticleMeta {...args} author={undefined} />
+    </div>
+  );
+};
+
+export const NoCategories: Story<ArticleMetaProps> = (args) => {
+  return (
+    <div>
+      <ArticleMeta {...args} categories={[]} />
+    </div>
+  );
+};
+
+export const NoAuthorAndNoCategories: Story<ArticleMetaProps> = (args) => {
+  return (
+    <div>
+      <ArticleMeta {...args} author={undefined} categories={[]} />
+    </div>
+  );
+};
