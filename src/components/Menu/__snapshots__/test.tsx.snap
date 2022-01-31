@@ -390,3 +390,280 @@ exports[`<Menu /> should match snapshot 2`] = `
   </nav>
 </menu>
 `;
+
+exports[`<Menu /> should render without img and snapshot 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c7 > img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.c5 {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c9 {
+  display: block;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  border-right: 0.5rem solid #000000;
+  -webkit-transition: all,0.3s ease-in-out;
+  transition: all,0.3s ease-in-out;
+}
+
+.c9:hover {
+  color: #dc143c;
+  border-right: 0.5rem solid #dc143c;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.c1 {
+  position: fixed;
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  margin-left: 1.6rem;
+  margin-top: 1.6rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  margin-left: 14rem;
+}
+
+.c1:hover {
+  color: #dc143c;
+}
+
+.c10 .c4 {
+  width: auto;
+  margin-top: 5rem;
+}
+
+.c10 .c6 img {
+  border: 0.5rem solid #dc143c;
+  border-radius: 50%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  height: 100vh;
+  background: #000000;
+  padding: 2.4rem;
+  overflow-y: auto;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.c3 .c4 {
+  width: auto;
+  margin-top: 5rem;
+}
+
+.c3 .c6 img {
+  border: 0.5rem solid #dc143c;
+  border-radius: 50%;
+}
+
+.c3 .menu-navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+@media (max-width:425px) {
+
+}
+
+@media (max-width:425px) {
+  .c1 {
+    padding: 3px;
+    margin-left: calc(100vw - 39px - 1.6rem);
+  }
+}
+
+@media (max-width:425px) {
+  .c10 .navbar-item .c8 {
+    width: initial;
+    border: none;
+  }
+}
+
+@media (max-width:425px) {
+  .c3 {
+    width: 100vw;
+    padding: 2.4rem;
+  }
+
+  .c3 .menu-navbar {
+    margin: 0 20px;
+  }
+
+  .c3 .navbar-item .c8 {
+    width: initial;
+    border: none;
+  }
+}
+
+<menu
+  class="c0"
+>
+  <a
+    aria-label="Open or close menu"
+    class="c1 menu-icon-opened"
+    href="#"
+    title="Open or close menu"
+  >
+    <svg
+      aria-hidden="true"
+      aria-label="Close menu"
+      class="c2"
+      fill="currentColor"
+      focusable="false"
+      height="2.5rem"
+      viewBox="0 0 24 24"
+      width="2.5rem"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+      />
+    </svg>
+  </a>
+  <nav
+    aria-label="menu"
+    class="c3 menu"
+  >
+    <h1
+      class="c4 c5"
+    >
+      <a
+        class="c6 c7"
+        href="/"
+        target="_self"
+      >
+        LogoLink
+      </a>
+    </h1>
+    <ul
+      class="menu-navbar"
+    >
+      <li
+        class="navbar-item"
+      >
+        <a
+          class="c8 c9"
+          href="#home1"
+          target="_self"
+        >
+          MenuLink1
+        </a>
+      </li>
+      <li
+        class="navbar-item"
+      >
+        <a
+          class="c8 c9"
+          href="#home2"
+          target="_self"
+        >
+          MenuLink2aadsd
+        </a>
+      </li>
+      <li
+        class="navbar-item"
+      >
+        <a
+          class="c8 c9"
+          href="#home3"
+          target="_self"
+        >
+          MenuLink3
+        </a>
+      </li>
+      <li
+        class="navbar-item"
+      >
+        <a
+          class="c8 c9"
+          href="#home4"
+          target="_self"
+        >
+          MenuLink4asd
+        </a>
+      </li>
+      <li
+        class="navbar-item"
+      >
+        <a
+          class="c8 c9"
+          href="#home5"
+          target="_self"
+        >
+          MenuLink5ssssssssssssssssssssssaaaa
+        </a>
+      </li>
+      <li
+        class="navbar-item"
+      >
+        <a
+          class="c8 c9"
+          href="#home6"
+          target="_self"
+        >
+          MenuLink6
+        </a>
+      </li>
+    </ul>
+  </nav>
+</menu>
+`;

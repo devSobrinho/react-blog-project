@@ -59,6 +59,20 @@ describe('<Menu />', () => {
       screen.getByRole('navigation', { name: 'menu' }).firstChild,
     ).not.toBeInTheDocument();
   });
+  it('should render without img and snapshot', () => {
+    const { container } = renderTheme(<Menu {...props} srcImg={undefined} />);
+
+    const buttonMenuClose = screen.getByRole('link', {
+      name: 'Open or close menu',
+    });
+    fireEvent.click(buttonMenuClose);
+
+    expect(screen.getByRole('link', { name: 'LogoLink' })).toBeInTheDocument();
+    expect(
+      screen.queryByRole('img', { name: 'LogoLink' }),
+    ).not.toBeInTheDocument();
+    expect(container.firstChild).toMatchSnapshot();
+  });
 
   it('should match snapshot', () => {
     const { container } = renderTheme(<Menu {...props} />);

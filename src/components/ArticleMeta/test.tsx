@@ -23,7 +23,7 @@ describe('<ArticleMeta />', () => {
   });
 
   it('should format date', () => {
-    renderTheme(<ArticleMeta {...props} />);
+    renderTheme(<ArticleMeta createdAt={props.createdAt} categories={[]} />);
 
     expect(screen.getByText('2 de mar. de 2021')).toHaveAttribute(
       'datetime',
@@ -39,8 +39,16 @@ describe('<ArticleMeta />', () => {
 
   it('should match snapshot with not author and not categories', () => {
     const { container } = renderTheme(
-      <ArticleMeta {...props} author={undefined} categories={[]} />,
+      <ArticleMeta
+        createdAt={props.createdAt}
+        author={undefined}
+        categories={undefined}
+      />,
     );
+
+    expect(
+      screen.queryByRole('link', { name: 'React' }),
+    ).not.toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
   });

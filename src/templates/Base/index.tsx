@@ -7,7 +7,7 @@ import { GoTop } from '../../components/GoTop';
 
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
-  children: string;
+  children: React.ReactNode;
 };
 
 export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {

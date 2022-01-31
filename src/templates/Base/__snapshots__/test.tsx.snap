@@ -411,7 +411,7 @@ exports[`<BaseTemplate /> should match snapshot 1`] = `
   <div
     class="c12"
   >
-    ola br
+    ola brasileirinho
   </div>
   <div
     class="c13"

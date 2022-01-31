@@ -1,4 +1,4 @@
-import { LogoLink } from '../LogoLink';
+import { LogoLink, LogoLinkProps } from '../LogoLink';
 import { MenuLink, MenuLinkProps } from '../MenuLink';
 import * as Styled from './styles';
 import {
@@ -8,14 +8,13 @@ import {
 import { useState } from 'react';
 
 export type MenuProps = {
-  // logoLink: LogoLinkProps;
-  text: string;
-  srcImg?: string;
-  link: string;
-  newTab?: boolean;
+  // text: string;
+  // srcImg?: string;
+  // link: string;
+  // newTab?: boolean;
 
   links: MenuLinkProps[];
-};
+} & LogoLinkProps;
 
 export const Menu = ({
   links,
