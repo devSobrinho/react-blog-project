@@ -50,10 +50,10 @@ export const Menu = ({
         )}
         {menuVisible && (
           <ul className="menu-navbar">
-            {links?.map((link) => {
+            {links?.map((linkMenu) => {
               return (
-                <li key={link.id} className="navbar-item">
-                  <MenuLink {...link} />
+                <li key={linkMenu.id} className="navbar-item">
+                  <MenuLink {...linkMenu} />
                 </li>
               );
             })}

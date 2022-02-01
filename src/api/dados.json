@@ -12,8 +12,8 @@
       "menuLink": [
         {
           "id": "61f1c5eb74c95ac8770eea85",
-          "link": "home",
-          "text": "#home",
+          "link": "#home",
+          "text": "home",
           "newTab": false
         },
         {

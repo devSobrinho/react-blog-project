@@ -15,11 +15,14 @@ export type LoadPostsVariables = {
   limit?: number;
 };
 
-export type StrapiData = { posts: PostStrapi[]; setting: SettingsStrapi };
+export type StrapiPostAndSettings = {
+  posts: PostStrapi[];
+  setting: SettingsStrapi;
+};
 
 export const loadPosts = async (
   variables: LoadPostsVariables = {},
-): Promise<StrapiData> => {
+): Promise<StrapiPostAndSettings> => {
   const defaultVariable: LoadPostsVariables = {
     sort: 'createdAt:desc',
     start: 0,

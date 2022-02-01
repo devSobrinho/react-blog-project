@@ -372,7 +372,7 @@ exports[`<Menu /> should match snapshot 2`] = `
           href="#home5"
           target="_self"
         >
-          MenuLink5ssssssssssssssssssssssaaaa
+          MenuLink5ss
         </a>
       </li>
       <li
@@ -649,7 +649,7 @@ exports[`<Menu /> should render without img and snapshot 1`] = `
           href="#home5"
           target="_self"
         >
-          MenuLink5ssssssssssssssssssssssaaaa
+          MenuLink5ss
         </a>
       </li>
       <li

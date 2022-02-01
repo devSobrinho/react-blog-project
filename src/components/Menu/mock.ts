@@ -11,7 +11,7 @@ export default {
     { text: 'MenuLink3', link: '#home3', id: 'link-3', newTab: false },
     { text: 'MenuLink4asd', link: '#home4', id: 'link-4', newTab: false },
     {
-      text: 'MenuLink5ssssssssssssssssssssssaaaa',
+      text: 'MenuLink5ss',
       link: '#home5',
       id: 'link-5',
       newTab: false,
