@@ -1,6 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PostsTemplate /> should match snapshot 1`] = `
+.c20 {
+  margin: 3.2rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+.c21 {
+  background: #000000;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 1.6rem;
+  border: none;
+}
+
+.c21:disabled {
+  background: #AAAAAA;
+}
+
+.c21:disabled:hover {
+  color: #FFFFFF;
+}
+
+.c21:hover {
+  color: #dc143c;
+}
+
 .c7 {
   color: #000000;
   line-height: 1.2;
@@ -156,25 +189,25 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   margin-bottom: 6.4rem;
 }
 
-.c20 {
+.c22 {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
   padding: 3.2rem;
 }
 
-.c23 {
+.c25 {
   font-size: calc(1.6rem + 0.2rem);
   line-height: 1.5;
 }
 
-.c23 p {
+.c25 p {
   margin: 2.4rem 0;
 }
 
-.c23 a,
-.c23 a:visited,
-.c23 a:link {
+.c25 a,
+.c25 a:visited,
+.c25 a:link {
   color: #dc143c;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -182,12 +215,12 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c23 a:hover {
+.c25 a:hover {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
 }
 
-.c23 code {
+.c25 code {
   font-family: monospace;
   color: #dc143c;
   font-size: 1.6rem;
@@ -196,7 +229,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   margin: 0.2rem;
 }
 
-.c23 pre {
+.c25 pre {
   background: #000000;
   padding: 2.4rem;
   font-family: monospace;
@@ -207,63 +240,63 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   font-size: 1.6rem;
 }
 
-.c23 pre code {
+.c25 pre code {
   color: inherit;
   background: inherit;
 }
 
-.c23 img {
+.c25 img {
   max-width: 100%;
 }
 
-.c23 .image {
+.c25 .image {
   background: #DDDDDD;
   line-height: 0;
   margin: 2.4rem 0;
 }
 
-.c23 .image figcaption {
+.c25 .image figcaption {
   font-size: 1.6rem;
   padding: 1.6rem;
   text-align: center;
   line-height: 1.3;
 }
 
-.c23 .image-style-side {
+.c25 .image-style-side {
   max-width: 50%;
   float: right;
   margin: 2.4rem 0;
 }
 
-.c23 hr {
+.c25 hr {
   border: none;
   border-bottom: 0.1rem solid #DDDDDD;
 }
 
-.c23 ul,
-.c23 ol {
+.c25 ul,
+.c25 ol {
   margin: 2.4rem 4.0rem;
 }
 
-.c23 .table {
+.c25 .table {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
 }
 
-.c23 table {
+.c25 table {
   width: 100%;
   border-collapse: collapse;
   margin: 2.4rem 0;
 }
 
-.c23 table td,
-.c23 table th {
+.c25 table td,
+.c25 table th {
   padding: 1.6rem;
   border: 0.1rem solid #DDDDDD;
 }
 
-.c23 blockquote {
+.c25 blockquote {
   border-left: 0.5rem solid #dc143c;
   color: #AAAAAA;
   -webkit-filter: brightness(80%);
@@ -273,22 +306,22 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   margin: 2.4rem;
 }
 
-.c21 {
+.c23 {
   text-align: center;
   border-top: 0.1rem solid #DDDDDD;
 }
 
-.c21 a {
+.c23 a {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c21 .c22 {
+.c23 .c24 {
   font-size: 1.6rem;
 }
 
-.c24 {
+.c26 {
   position: fixed;
   background: #000000;
   color: #FFFFFF;
@@ -423,11 +456,11 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
 }
 
 @media (max-width:768px) {
-  .c23 {
+  .c25 {
     font-size: 2rem;
   }
 
-  .c23 .image-style-side {
+  .c25 .image-style-side {
     max-width: 100%;
     float: none;
     margin: 0;
@@ -970,16 +1003,25 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
         </div>
       </div>
     </div>
+    <div
+      class="c20"
+    >
+      <button
+        class="c21"
+      >
+        Carregar posts
+      </button>
+    </div>
   </div>
   <div
-    class="c20"
+    class="c22"
   >
     <footer
-      class="c21"
+      class="c23"
       style="margin-top: 50px;"
     >
       <div
-        class="c22 c23"
+        class="c24 c25"
       >
         <p>
           O texto da Footer
@@ -989,7 +1031,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   </div>
   <a
     aria-label="Go to top"
-    class="c24"
+    class="c26"
     href="#"
     title="Go to top"
   >

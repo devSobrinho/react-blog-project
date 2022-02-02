@@ -1,12 +1,17 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { loadPosts, StrapiPostAndSettings } from '../../api/load-posts';
+import {
+  defaultLoadPostsVariables,
+  loadPosts,
+  StrapiPostAndSettings,
+} from '../../api/load-posts';
 import { PostsTemplate } from '../../templates/PostsTemplate';
 
 export default function CategoryPage({
   setting,
   posts,
+  variables,
 }: StrapiPostAndSettings) {
   const router = useRouter();
 
@@ -26,30 +31,12 @@ export default function CategoryPage({
         </title>
         <meta name="description" content={setting.blogDescription} />
       </Head>
-      <PostsTemplate settings={setting} posts={posts} />;
+      <PostsTemplate settings={setting} posts={posts} variables={variables} />;
     </>
   );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // let data: null | StrapiPostAndSettings;
-  // let paths = [];
-
-  // try {
-  //   data = await loadPosts();
-  //   data.posts.map(
-  //     (post) =>
-  //       (paths = post.categories.map((category) => ({
-  //         params: {
-  //           slug: category.slug,
-  //         },
-  //       }))),
-  //   );
-  // } catch (e) {
-  //   data = null;
-  //   paths = [];
-  // }
-
   return {
     paths: [],
     fallback: true,
@@ -60,11 +47,12 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
   ctx,
 ) => {
   let data: null | StrapiPostAndSettings;
+  const variables = {
+    categorySlug: ctx.params.slug as string,
+  };
 
   try {
-    data = await loadPosts({
-      categorySlug: ctx.params.slug as string,
-    });
+    data = await loadPosts(variables);
   } catch (e) {
     data = null;
   }
@@ -79,6 +67,7 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
     props: {
       setting: data.setting,
       posts: data.posts,
+      variables: { ...defaultLoadPostsVariables, ...variables },
     },
   };
 };
