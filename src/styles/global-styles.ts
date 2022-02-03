@@ -30,8 +30,7 @@ export const GlobalStyles = createGlobalStyle`
 
   p {
     margin: ${({ theme }) => theme.spacings.medium} 0;
-    color: ${({ theme }) =>
-      theme.invertedStyled ? theme.colors.primary : theme.colors.darkText};
+    color: ${({ theme }) => theme.colors.darkText};
 
   }
 
