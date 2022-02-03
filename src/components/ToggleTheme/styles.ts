@@ -1,12 +1,10 @@
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    z-index: 2;
-  `}
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
 `;
 
 export const Label = styled.label`

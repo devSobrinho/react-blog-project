@@ -22,7 +22,7 @@ export function Header({
   return (
     <Styled.Wrapper>
       <LogoLink
-        link={logo.url}
+        link={'#home'}
         text={
           logo.alternativeText === ''
             ? logo.alternativeText

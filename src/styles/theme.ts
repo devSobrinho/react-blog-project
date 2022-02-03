@@ -7,6 +7,7 @@ export const theme = {
     white: '#FFFFFF',
     mediumGray: '#DDDDDD',
     darkGray: '#AAAAAA',
+    success: '#1be72c',
   },
   font: {
     family: {

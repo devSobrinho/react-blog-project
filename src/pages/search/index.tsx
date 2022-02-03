@@ -19,7 +19,7 @@ export default function SearchPage({
     <>
       <Head>
         <title>
-          Search: {router.query.post} - {setting.blogName}
+          Search: {router.query.q} - {setting.blogName}
         </title>
         <meta name="description" content={setting.blogDescription} />
       </Head>
@@ -32,7 +32,7 @@ export const getServerSideProps: GetServerSideProps<
   StrapiPostAndSettings
 > = async (ctx) => {
   let data: null | StrapiPostAndSettings;
-  const query = (ctx.query.post as string) || '';
+  const query = (ctx.query.q as string) || '';
 
   if (!query) {
     return {

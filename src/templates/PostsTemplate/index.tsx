@@ -3,7 +3,7 @@ import { PostStrapi } from '../../shared-types/post-strapi';
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
 import { BaseTemplate } from '../Base';
 import { PostGrid } from '../../components/PostGrid';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { loadPosts, LoadPostsVariables } from '../../api/load-posts';
 
 export type PostsTemplateProps = {
@@ -40,6 +40,13 @@ export const PostsTemplate = ({
     setStateVariables(newVariables);
     setStatePosts((p) => [...p, ...morePosts.posts]);
   };
+
+  useEffect(() => {
+    setStatePosts(posts);
+    setStateVariables(variables);
+    setNoMorePosts(false);
+    setButtonDisabled(false);
+  }, [posts, variables]);
 
   return (
     <BaseTemplate settings={settings}>

@@ -22,7 +22,7 @@ export function Comments({ id, slug, title, allowComments }: CommentsProps) {
           url: `${config.url}/post/${slug}`,
           identifier: id,
           title: title,
-          language: 'pt-BR',
+          language: 'pt_BR',
         }}
       />
     </Styled.Wrapper>
