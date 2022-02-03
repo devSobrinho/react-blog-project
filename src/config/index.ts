@@ -1,6 +1,7 @@
 export default {
-  url: 'https://strapi-landing-pages-project-2.herokuapp.com',
+  url: 'https://strapi-blog-dev-sobrinho.herokuapp.com/',
   siteName: 'Dev Sobrinho',
-  defaultSlug: 'landing-page',
-  graphqlURL: 'http://localhost:1337/graphql',
+  defaultSlug: 'blogs-dev-sobrinho',
+  graphqlURL: 'https://strapi-blog-dev-sobrinho.herokuapp.com/graphql',
+  // graphqlURL: 'http://localhost:1337/graphql',
 };
