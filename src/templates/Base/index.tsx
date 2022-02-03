@@ -1,9 +1,11 @@
+import { useRouter } from 'next/router';
+import * as Styled from './styles';
 import { Header } from '../../components/Header';
 import { Menu } from '../../components/Menu';
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
-import * as Styled from './styles';
 import { Footer } from '../../components/Footer';
 import { GoTop } from '../../components/GoTop';
+import { ToggleTheme } from '../../components/ToggleTheme';
 
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
@@ -11,11 +13,13 @@ export type BaseTemplateProps = {
 };
 
 export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
+  const router = useRouter();
+
   return (
     <>
       <Styled.Wrapper>
+        <ToggleTheme />
         <Menu
-          // logoLink={settings.logo}
           text={settings.logo.alternativeText}
           link={'/'}
           srcImg={settings.logo.url}
@@ -29,6 +33,16 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
             logo={settings.logo}
           />
         </Styled.HeaderContainer>
+        <Styled.SearchContainer>
+          <form action="/search" method="GET">
+            <Styled.SearchInput
+              type={'search'}
+              placeholder="Buscar post"
+              name="post"
+              defaultValue={router?.query?.post}
+            ></Styled.SearchInput>
+          </form>
+        </Styled.SearchContainer>
         <Styled.ContentContainer>{children}</Styled.ContentContainer>
         <Styled.Footer>
           <Footer footerHtml={settings.footer} />

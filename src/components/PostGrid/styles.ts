@@ -16,7 +16,7 @@ export const NotFound = styled.div`
 
 export const Grid = styled.div`
   ${({ theme }) => css`
-    max-width: 120rem;
+    max-width: ${theme.sizes.maxWith};
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
@@ -27,50 +27,3 @@ export const Grid = styled.div`
     }
   `}
 `;
-// export const Grid = styled.div`
-//   ${({ theme }) => css`
-//     display: flex;
-//     flex-flow: row wrap;
-
-//     & ${PostCardStyles} {
-//       width: 100%;
-//       max-width: calc(100% / 3 - (3.2rem / 3));
-//       margin-right: ${theme.spacings.small};
-//       margin-bottom: ${theme.spacings.small};
-//     }
-//     & ${PostCardStyles}:nth-child(1n) {
-//       margin-right: ${theme.spacings.small};
-//       margin-bottom: ${theme.spacings.small};
-//     }
-//     & ${PostCardStyles}:nth-child(3n) {
-//       margin-right: 0;
-//     }
-
-//     @media ${theme.media.lteMedium} {
-//       & ${PostCardStyles} {
-//         max-width: calc(100% / 2 - (0.8rem));
-//       }
-
-//       & ${PostCardStyles}:nth-child(1n) {
-//         margin-right: ${theme.spacings.small};
-//         margin-bottom: ${theme.spacings.small};
-//       }
-
-//       & ${PostCardStyles}:nth-child(2n) {
-//         margin-right: 0;
-//       }
-//     }
-
-//     @media ${theme.media.lteSmall} {
-//       flex-flow: row wrap;
-
-//       & ${PostCardStyles} {
-//         max-width: 100%;
-//       }
-
-//       & ${PostCardStyles}:nth-child(1n) {
-//         margin-right: 0;
-//       }
-//     }
-//   `}
-// `;

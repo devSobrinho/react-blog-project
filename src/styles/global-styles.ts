@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.darkText};
     background: ${({ theme }) => theme.colors.white};
     /* padding: 0 !important; */
+    transition: all 300ms ease-in-out;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -29,6 +30,9 @@ export const GlobalStyles = createGlobalStyle`
 
   p {
     margin: ${({ theme }) => theme.spacings.medium} 0;
+    color: ${({ theme }) =>
+      theme.invertedStyled ? theme.colors.primary : theme.colors.darkText};
+
   }
 
   ul, ol {

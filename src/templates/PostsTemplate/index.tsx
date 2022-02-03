@@ -22,28 +22,6 @@ export const PostsTemplate = ({
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [noMorePosts, setNoMorePosts] = useState(false);
 
-  // const [startPost, setStartPost] = useState(2);
-
-  // useEffect(() => {
-  //   setStartPost(statePosts.length + 1);
-  //   if (!noMorePosts) {
-  //     loadPosts({ limit: startPost, start: startPost - 1 }).then((data) => {
-  //       console.log('aqqqs');
-
-  //       if (data.posts.length <= 0 || !data.posts) {
-  //         setButtonDisabled(true);
-  //         setNoMorePosts(true);
-  //       }
-  //     });
-  //   }
-  //   console.log(startPost);
-  // }, [posts, statePosts, startPost, noMorePosts]);
-
-  // const handleLoadMorePosts = async () => {
-  //   const data = await loadPosts({ limit: startPost, start: 0 });
-  //   setStatePosts(data.posts);
-  // };
-
   const handleLoadMorePosts = async () => {
     setButtonDisabled(true);
 
@@ -66,11 +44,16 @@ export const PostsTemplate = ({
   return (
     <BaseTemplate settings={settings}>
       <PostGrid posts={statePosts} />
-      <Styled.ButtonContainer>
-        <Styled.Button onClick={handleLoadMorePosts} disabled={buttonDisabled}>
-          {noMorePosts ? 'Sem mais posts' : 'Carregar posts'}
-        </Styled.Button>
-      </Styled.ButtonContainer>
+      {statePosts && statePosts.length > 0 && (
+        <Styled.ButtonContainer>
+          <Styled.Button
+            onClick={handleLoadMorePosts}
+            disabled={buttonDisabled}
+          >
+            {noMorePosts ? 'Sem mais posts' : 'Carregar posts'}
+          </Styled.Button>
+        </Styled.ButtonContainer>
+      )}
     </BaseTemplate>
   );
 };

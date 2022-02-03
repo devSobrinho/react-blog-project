@@ -69,5 +69,6 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
       posts: data.posts,
       variables: { ...defaultLoadPostsVariables, ...variables },
     },
+    revalidate: 24 * 60 * 60,
   };
 };
