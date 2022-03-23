@@ -43,4 +43,17 @@ export const theme = {
     content: '80rem',
     maxWith: '120rem',
   },
+} as Theme;
+
+type Theme = {
+  name: string;
+  colors: {
+    primary: string;
+    darkText: string;
+    secondary: string;
+    white: string;
+    mediumGray: string;
+    darkGray: string;
+    success: string;
+  };
 };
